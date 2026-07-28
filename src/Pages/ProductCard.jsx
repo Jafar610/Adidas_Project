@@ -4,7 +4,7 @@ import KeyboardArrowLeftIcon from "@mui/icons-material/KeyboardArrowLeft";
 import NavigateNextIcon from "@mui/icons-material/NavigateNext";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 
-function ProductCard() {
+function ProductCard({header_title}) {
   const scrollRef = useRef(null);
 
   const scrollCards = (direction) => {
@@ -21,7 +21,7 @@ function ProductCard() {
     <>
       <div className="">
         <div className="flex justify-between px-6 py-2">
-          <h3 className="font-bold">adiWeek</h3>
+          <h3 className="font-bold">{header_title}</h3>
           <div className="flex gap-2">
             <button
               type="button"

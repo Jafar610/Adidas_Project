@@ -1,6 +1,6 @@
 import Navbar from "./Components/Header/Navbar"
 import Hero from "./Components/Hero/Hero"
-import ProductCard from "./Pages/ProductCard"
+import Product from "./Components/Product/Product"
 
 function App() {
 
@@ -9,7 +9,7 @@ function App() {
     <>
       <Navbar/>
       <Hero/>
-      <ProductCard/>
+      <Product/>
     </>
   )
 }
