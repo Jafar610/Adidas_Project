@@ -1,5 +1,6 @@
 import Navbar from "./Components/Header/Navbar"
 import Hero from "./Components/Hero/Hero"
+import ProductCard from "./Pages/ProductCard"
 
 function App() {
 
@@ -8,6 +9,7 @@ function App() {
     <>
       <Navbar/>
       <Hero/>
+      <ProductCard/>
     </>
   )
 }

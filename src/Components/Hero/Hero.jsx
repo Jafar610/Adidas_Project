@@ -6,7 +6,7 @@ function Hero() {
   return (
     <>
       <section
-        className="bg-cover bg-center h-screen w-full"
+        className="bg-cover bg-center h-125 w-full"
         style={{ backgroundImage: `url(${heroImage})` }}
       >
         <div className="relative">
@@ -23,13 +23,13 @@ function Hero() {
               Exclusive releases for our members and more ways to unlock those things that you love.
             </p>
 
-            <div className="flex gap-2 text-white mt-10">
-              <ArrowRightAltIcon fontSize="large" />
+            <div className="flex gap-2 text-white mt-10 font-extrabold text-xl">
+              <ArrowRightAltIcon style={{fontSize: '50px'}} />
               <button>SEE MORE</button>
             </div>
 
-            <div>
-              <ArrowRightAltIcon />
+            <div className="flex gap-2 text-white font-extrabold text-xl">
+              <ArrowRightAltIcon style={{fontSize: '50px'}} />
               <button>BUY NOW</button>
             </div>
           </div>
