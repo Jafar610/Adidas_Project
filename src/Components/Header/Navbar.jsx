@@ -9,22 +9,22 @@ function Navbar() {
   return (
     <section>
       <SmallHeader />
-      <div>
-        <div>
-          <a href=""><img src={logo} alt="Adidas logo" /></a>
+      <div className="flex justify-center align-center">
+        <div className="flex justify-center align-center gap-5 py-4 text-2xl font-sm uppercase">
+          <a href="" className="pr-10"><img src={logo} alt="Adidas logo" className="w-15" /></a>
           <a href="">Women</a>
           <a href="">Men</a>
           <a href="">Kids</a>
           <a href="">News</a>
           <a href="">Sport</a>
           <a href="">Adidas World</a>
-          <div>
-            <input type="text" placeholder="Forum Mid Parley" />
-            <SearchIcon/>
+          <div className="relative ">
+            <input type="text" placeholder="Forum Mid Parley" className="border border-gray-200 outline-none rounded-sm bg-gray-200 px-2 text-lg py-1" />
+            <SearchIcon className="absolute right-3 bottom-1"/>
           </div>
-          <PersonOutlineOutlinedIcon/>
-          <FavoriteBorderOutlinedIcon/>
-          <ShoppingBagOutlinedIcon/>
+          <PersonOutlineOutlinedIcon fontSize="large"/>
+          <FavoriteBorderOutlinedIcon fontSize="large"/>
+          <ShoppingBagOutlinedIcon fontSize="large"/>
         </div>
       </div>
     </section>
