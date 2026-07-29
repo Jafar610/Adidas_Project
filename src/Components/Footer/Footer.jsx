@@ -4,6 +4,9 @@ import FacebookRoundedIcon from "@mui/icons-material/FacebookRounded";
 import YouTubeIcon from "@mui/icons-material/YouTube";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import TwitterIcon from "@mui/icons-material/Twitter";
+import visa from "../../assets/PaymentLogo/Visa.png";
+import express from "../../assets/PaymentLogo/A.Express.png";
+import vCard from "../../assets/PaymentLogo/Vector.png";
 function Footer() {
   return (
     <>
@@ -22,7 +25,7 @@ function Footer() {
             <p>Privacy Politics</p>
           </div>
 
-          <div  className="flex flex-col justify-center text-sm text-gray-200">
+          <div className="flex flex-col justify-center text-sm text-gray-200">
             <h2 className="text-3xl font-bold text-white">COLLECTIONS</h2>
             <p>Ultraboost</p>
             <p>Confirmed</p>
@@ -30,7 +33,7 @@ function Footer() {
             <p>Originals</p>
           </div>
 
-          <div  className="flex flex-col justify-center text-sm text-gray-200">
+          <div className="flex flex-col justify-center text-sm text-gray-200">
             <h2 className="text-3xl font-bold text-white">SPORTS</h2>
             <p>Football</p>
             <p>Basketball</p>
@@ -38,7 +41,7 @@ function Footer() {
             <p>Training</p>
           </div>
 
-          <div  className="flex flex-col justify-center text-sm text-gray-200" >
+          <div className="flex flex-col justify-center text-sm text-gray-200">
             <h2 className="text-3xl font-bold text-white">SUPPORT</h2>
             <p>Customer</p>
             <p>F.A.Q.</p>
@@ -54,14 +57,18 @@ function Footer() {
             </div>
 
             <div className="flex justify-center align-center gap-6">
-                <InstagramIcon fontSize="large"/>
-                <TwitterIcon fontSize="large"/>
+              <InstagramIcon fontSize="large" />
+              <TwitterIcon fontSize="large" />
             </div>
           </div>
         </div>
 
         {/* payment */}
-        <div></div>
+        <div className="flex justify-center align-center gap-3 py-2">
+          <img src={visa} alt="" className="w-5" />
+          <img src={vCard} alt="" className="w-5" />
+          <img src={express} alt="" className="w-5" />
+        </div>
       </div>
     </>
   );
