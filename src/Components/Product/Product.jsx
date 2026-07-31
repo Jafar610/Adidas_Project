@@ -8,6 +8,7 @@ function Product() {
         <ProductCard header_title = 'adiWeek' />
         <OutfitForBenefit/>
         <ProductCard header_title = 'Do you still like these products?' />
+
     </>
   )
 }
