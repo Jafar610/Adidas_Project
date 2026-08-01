@@ -10,53 +10,63 @@ import vCard from "../../assets/PaymentLogo/Vector.png";
 function Footer() {
   return (
     <>
-      <div className="bg-[#231F20] py-4">
+      <div className="bg-[#231F20] py-6 md:py-8">
         {/* logo */}
         <div className="flex justify-center">
-          <img src={logo} alt="" className="w-20" />
+          <img src={logo} alt="" className="w-20 md:w-24" />
         </div>
 
         {/* navigation */}
-        <div className="text-white flex justify-around align-center gap-4">
-          <div className="flex flex-col justify-center text-sm text-gray-300">
-            <h2 className="text-3xl font-bold text-white">INFO</h2>
+        <div className="mx-auto mt-6 flex max-w-7xl flex-wrap justify-center gap-8 px-4 text-white sm:gap-6 md:justify-around lg:gap-8">
+          <div className="flex w-full flex-col items-center text-center text-sm text-gray-300 sm:w-[45%] md:w-auto md:items-start md:text-left">
+            <h2 className="text-xl font-bold text-white sm:text-2xl md:text-3xl">
+              INFO
+            </h2>
             <p>Terms and Conditions</p>
             <p>Cookies</p>
             <p>Privacy Politics</p>
           </div>
 
-          <div className="flex flex-col justify-center text-sm text-gray-200">
-            <h2 className="text-3xl font-bold text-white">COLLECTIONS</h2>
+          <div className="flex w-full flex-col items-center text-center text-sm text-gray-200 sm:w-[45%] md:w-auto md:items-start md:text-left">
+            <h2 className="text-xl font-bold text-white sm:text-2xl md:text-3xl">
+              COLLECTIONS
+            </h2>
             <p>Ultraboost</p>
             <p>Confirmed</p>
             <p>NMD</p>
             <p>Originals</p>
           </div>
 
-          <div className="flex flex-col justify-center text-sm text-gray-200">
-            <h2 className="text-3xl font-bold text-white">SPORTS</h2>
+          <div className="flex w-full flex-col items-center text-center text-sm text-gray-200 sm:w-[45%] md:w-auto md:items-start md:text-left">
+            <h2 className="text-xl font-bold text-white sm:text-2xl md:text-3xl">
+              SPORTS
+            </h2>
             <p>Football</p>
             <p>Basketball</p>
             <p>Running</p>
             <p>Training</p>
           </div>
 
-          <div className="flex flex-col justify-center text-sm text-gray-200">
-            <h2 className="text-3xl font-bold text-white">SUPPORT</h2>
+          <div className="flex w-full flex-col items-center text-center text-sm text-gray-200 sm:w-[45%] md:w-auto md:items-start md:text-left">
+            <h2 className="text-xl font-bold text-white sm:text-2xl md:text-3xl">
+              SUPPORT
+            </h2>
             <p>Customer</p>
             <p>F.A.Q.</p>
             <p>Shipping</p>
             <p>adiClub</p>
           </div>
 
-          <div>
-            <h2 className="text-3xl font-bold text-white">FOLLOW US</h2>
-            <div className="flex justify-center align-center gap-6">
+          <div className="mt-2 flex w-full flex-col items-center text-center sm:w-auto md:mt-0 md:items-start md:text-left">
+            <h2 className="text-xl font-bold text-white sm:text-2xl md:text-3xl">
+              FOLLOW US
+            </h2>
+            <div className="mt-3 flex justify-center gap-6 md:justify-start">
               <FacebookRoundedIcon fontSize="large" />
               <YouTubeIcon fontSize="large" />
             </div>
 
-            <div className="flex justify-center align-center gap-6">
+            <div className="mt-2 flex justify-center gap-6 md:justify-start">
               <InstagramIcon fontSize="large" />
               <TwitterIcon fontSize="large" />
             </div>
@@ -64,7 +74,7 @@ function Footer() {
         </div>
 
         {/* payment */}
-        <div className="flex justify-center align-center gap-3 py-2">
+        <div className="mt-6 flex flex-wrap justify-center gap-3 py-2">
           <img src={visa} alt="" className="w-5" />
           <img src={vCard} alt="" className="w-5" />
           <img src={express} alt="" className="w-5" />
